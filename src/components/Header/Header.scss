@@ -1,0 +1,66 @@
+header {
+    width: 100%;
+
+    .Header {
+        display: flex;
+        align-items: center;
+        padding: 12px 232px 12px 215px;
+        height: 35px;
+        gap: 59px;
+
+        .logo {
+            height: 38px;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 30px;
+        
+            .nav-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* min-width: 275px;
+                min-height: 80px; */
+
+                border-radius: 30px;
+
+                font-family: "Montserrat";
+                font-weight: 400;
+                font-size: 15px;
+
+                text-decoration: none;
+                color: #000000;
+        
+                &:hover {
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #000000;
+                }
+            }
+        }
+
+        .contact-number {
+            font-family: "Inter";
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 154px;
+            height: 35px;
+            border-radius: 15px;
+            background-color: #1B9AE9;
+            color: #ffffff;
+
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.NewsItem {
+    display: flex;
+    flex-direction: column;
+    border: 8px solid #02234B;
+    border-radius: 25px; 
+    padding: 20px;
+    max-width: 871px;
+    height: fit-content;
+    gap: 10px;
+
+    .text {
+
+    }
+}

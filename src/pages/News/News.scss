@@ -1,0 +1,19 @@
+.News {
+    background: rgb(170,215,244, 0.9);
+    background: linear-gradient(180deg, rgba(170,215,244,0.9) 0%, rgba(255,255,255,0.9) 100%);
+    padding-top: 40px;
+    color: #00214A ;
+
+    .title {
+        padding: 40px;
+    }
+    
+    .news-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-auto-flow: dense;
+        gap: 50px;
+        padding: 40px;
+    }
+}

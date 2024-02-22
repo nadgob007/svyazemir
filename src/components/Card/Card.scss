@@ -1,0 +1,36 @@
+.Card {
+    display: flex;
+    max-height: 266px;
+    font-size: 1.3rem;
+
+    .photo {
+        max-height: 250px;
+        border: 8px solid #02234B;
+        border-radius: 25px; 
+    }
+    
+    .info {
+        .name {
+            margin: 0 0 0 30px; 
+        }
+
+        .top-hr {
+            height: 7px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .details {
+            margin: 0 0 0 30px;
+            .contact {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }   
+    }
+
+    h3 {
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+}
+
