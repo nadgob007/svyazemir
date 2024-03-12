@@ -114,8 +114,8 @@ export const AboutProduct = () => {
       </div>
       <div className="additionalFunctionality">
         <Divider className="divider-top" />
-        <div className="">
-          <div>
+        <div className="additionalFunctionality-text">
+          <div className="top">
             <h4>Дополнительный функционал</h4>
             <p>
               На данный момент реализован Web интерфейс, с помощью которого
@@ -125,7 +125,7 @@ export const AboutProduct = () => {
               удобной удалённой работы.
             </p>
           </div>
-          <div>
+          <div className="bottom">
             <h4>Планируемая конфигурация</h4>
             <ul>
               Устройство, которое на данный момент разрабатывается, предполагает

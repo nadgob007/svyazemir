@@ -1,37 +1,109 @@
 .Team {
-    background: rgb(170,215,244, 0.9);
-    background: linear-gradient(180deg, rgba(170,215,244,0.9) 0%, rgba(255,255,255,0.9) 100%);
-    padding-top: 40px;
-    color: #00214A ;
+  padding: 56px 215px 61px 215px;
+  font-size: 20px;
 
-    .title {
-        padding: 40px;
+  .team-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 30px;
+  }
 
-        .comand-photo {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 33px;
+  .title {
+    padding: 40px;
+
+    .comand-photo {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 33px;
+    }
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    background-color: #e9e9e9;
+    padding: 21px 30px 26px 30px;
+    box-shadow: -10px 20px 15px rgba(0, 0, 0, 0.25);
+    max-width: 1030px;
+
+    .image {
+      img {
+        width: 355px;
+        height: 329px;
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      font-size: 20px;
+      min-height: 314px;
+      padding-bottom: 15px;
+
+      h2 {
+        font-weight: 600;
+        align-self: flex-start;
+        margin: 0;
+        font-size: 24px;
+      }
+
+      ul {
+        font-family: "Inter";
+        margin: 0;
+        padding: 13px 0 25px 0;
+        font-weight: 400;
+      }
+
+      .quote {
+        display: flex;
+        flex-grow: 1;
+
+        p {
+          position: relative;
+          font-style: italic;
+          text-align: justify;
+
+          span {
+            font-size: 50px;
+            line-height: 50px;
+          }
+
+          .top {
+            left: -25px;
+            top: -25px;
+            position: absolute;
+          }
+
+          .bottom {
+            right: -10px;
+            bottom: -50px;
+            position: absolute;
+          }
         }
-    }
-    
-    .persons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 61px;
-        grid-column-gap: 33px;
-        padding: 40px;
-    }
+      }
 
-    @media (max-width: 1800px) {
-        .Team {
-            .comand-photo {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+      .mail {
+        display: flex;
+        align-self: flex-start;
+        justify-self: end;
+      }
     }
-}
+  }
 
-h2 {
-    margin: 0 0 41px 0;
+  .quote-persons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 38px;
+
+    .divide-text {
+      text-align: justify;
+      padding: 65px 0 47px 0;
+    }
+  }
 }

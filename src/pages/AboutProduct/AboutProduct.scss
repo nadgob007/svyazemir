@@ -108,6 +108,43 @@
   }
 
   .additionalFunctionality {
+    padding: 40px 215px 95px 215px;
+
+    .additionalFunctionality-text {
+      max-width: 1170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 27px;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+
+        ul {
+          padding: 0;
+          margin: 0;
+
+          text-align: justify;
+          list-style-type: none;
+          li {
+            margin-top: 25px;
+
+            &:before {
+              padding: 5px 15px 0 0;
+              content: '-';
+            }
+          }
+        }
+      }
+    }
 
     img {
       width: 1169px;
