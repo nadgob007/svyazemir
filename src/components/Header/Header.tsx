@@ -14,8 +14,6 @@ export const Header = () => {
                 <NavLink  className="nav-link" to='/'> Главная </NavLink>
                 <NavLink  className="nav-link" to='/information'> Информация </NavLink>
                 <NavLink  className="nav-link" to='/team'> Команда </NavLink>
-                <NavLink  className="nav-link" to='/news'> Новости </NavLink>
-                <NavLink  className="nav-link" to='/contact'> Контакты </NavLink>
             </div>
             <div className='contact-number'>
                 <p>+7(927)207-22-41</p>
