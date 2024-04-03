@@ -8,7 +8,7 @@ import Ilya from "../../assets/images/ilya.png";
 import TeamInTrain from "../../assets/images/teamInTrain.jpg";
 
 import Sofia from "../../assets/images/Sofia.png";
-import Roman from "../../assets/images/roman.png";
+import Roman from "../../assets/images/Roman.png";
 
 import { CardMini, IPerson } from "../../components/CardMini/CardMini";
 import { Card } from "../../components/Card/Card";

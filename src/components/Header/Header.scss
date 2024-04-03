@@ -25,6 +25,7 @@ header {
 
       .nav-link {
         display: flex;
+        position: relative;
         justify-content: center;
         align-items: center;
         /* min-width: 275px;
@@ -35,13 +36,32 @@ header {
         font-family: "Montserrat";
         font-weight: 400;
         font-size: 15px;
-
         text-decoration: none;
         color: #000000;
+        transition: 0.24s;
 
         &:hover {
+          color: transparent;
+        }
+
+        &::after {
+          content: attr(data-title);
+          display: flex;
+          text-align: center;
+          align-items: center;
+          color: transparent;
+          
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+
           font-weight: 500;
-          font-size: 15px;
+          transition: 0.24s;
+        }
+
+        &:hover::after {
           color: #000000;
         }
       }
