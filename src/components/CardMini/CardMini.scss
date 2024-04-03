@@ -1,0 +1,89 @@
+.CardMini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #e9e9e9;
+  padding: 22px 20px 0 16px;
+  box-shadow: -10px 20px 15px rgba(0, 0, 0, 0.25);
+
+  height: 250px;
+  width: 421px;
+
+  .photo {
+    display: flex;
+    align-self: flex-end;
+    max-height: 252px;
+    max-width: 201px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    &.sofia {
+      justify-content: end;
+    }
+
+    h3 {
+      margin: 0 0 16px 0;
+
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    ul {
+      margin: 0;
+      flex-grow: 1;
+      padding-left: 23px;
+
+      list-style-type: none;
+
+      &.sofia {
+        flex-grow: 0; height: 120px;
+      }
+      
+      li {
+        margin: 8px 0;
+
+        &::before {
+          content: "•";
+          color: black; 
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+
+        &::marker {
+          padding-left: 5px;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .email {
+      padding-bottom: 15px;
+
+      p {
+        margin: 0;
+        white-space: nowrap;
+        text-decoration: underline;
+
+        &:hover {
+            cursor: pointer;
+            color: #1b9ae9;
+        }
+      }
+    }
+  }
+}

@@ -1,37 +1,90 @@
 .Team {
-    background: rgb(170,215,244, 0.9);
-    background: linear-gradient(180deg, rgba(170,215,244,0.9) 0%, rgba(255,255,255,0.9) 100%);
-    padding-top: 40px;
-    color: #00214A ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 215px 61px 215px;
+  font-size: 20px;
+
+  .team-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    max-width: 1170px;
+
+    gap: 30px;
 
     .title {
-        padding: 40px;
-
-        .comand-photo {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 33px;
-        }
-    }
-    
-    .persons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 61px;
-        grid-column-gap: 33px;
-        padding: 40px;
+      padding: 40px;
     }
 
-    @media (max-width: 1800px) {
-        .Team {
-            .comand-photo {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-    }
-}
+    .comand-photo {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 33px;
 
-h2 {
-    margin: 0 0 41px 0;
+      img {
+        max-width: 770px;
+        max-height: 497px;
+      }
+    }
+  }
+
+  .quote-persons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 38px;
+
+    .divide-text {
+      max-width: 1170px;
+      padding: 65px 0 47px 0;
+      text-align: justify;
+    }
+  }
+
+  .programmers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+
+    padding-top: 73px;
+
+    height: 576px;
+
+    .cards-column {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .programmers-image {
+      img {
+        max-height: 510px;
+        max-width: 682px;
+      }
+    }
+  }
+
+  .designSecurity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .divide-text {
+      width: 1170px;
+      text-align: justify;
+      padding: 88px 0 43px;
+    }
+
+    .cards-row {
+      display: flex;
+      gap: 76px;
+    }
+  }
 }

@@ -1,36 +1,85 @@
 .Card {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  background-color: #e9e9e9;
+  padding: 21px 30px 26px 30px;
+  box-shadow: -10px 20px 15px rgba(0, 0, 0, 0.25);
+  max-width: 1030px;
+
+  img {
+    width: 355px;
+    height: 329px;
+  }
+
+  .info {
     display: flex;
-    max-height: 266px;
-    font-size: 1.3rem;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 20px;
+    min-height: 314px;
+    padding-bottom: 15px;
 
-    .photo {
-        max-height: 250px;
-        border: 8px solid #02234B;
-        border-radius: 25px; 
+    h2 {
+      font-weight: 600;
+      align-self: flex-start;
+      margin: 0;
+      font-size: 24px;
     }
-    
-    .info {
-        .name {
-            margin: 0 0 0 30px; 
+
+    ul {
+      font-family: "Inter";
+      margin: 0;
+      padding: 13px 0 25px 0;
+      font-weight: 400;
+    }
+
+    .quote {
+      display: flex;
+      flex-grow: 1;
+
+      p {
+        position: relative;
+        font-style: italic;
+        text-align: justify;
+
+        span {
+          font-size: 50px;
+          line-height: 50px;
         }
 
-        .top-hr {
-            height: 7px;
-            border-radius: 0 10px 10px 0;
+        .top {
+          left: -25px;
+          top: -25px;
+          position: absolute;
         }
 
-        .details {
-            margin: 0 0 0 30px;
-            .contact {
-                text-decoration: underline;
-                cursor: pointer;
-            }
-        }   
+        .bottom {
+          right: -10px;
+          bottom: -50px;
+          position: absolute;
+        }
+      }
     }
 
-    h3 {
-        margin-top: 11px;
-        margin-bottom: 11px;
+    .email {
+      display: flex;
+      align-self: flex-start;
+      justify-self: end;
+      
+      p {
+        margin: 0;
+
+        span {
+          text-decoration: underline;
+
+          &:hover {
+            cursor: pointer;
+            color: #1b9ae9;
+          }
+        }
+      }
     }
+  }
 }
-
