@@ -8,8 +8,11 @@
   max-width: 1030px;
 
   img {
-    width: 355px;
-    height: 329px;
+    width: 100%;
+    height: auto;
+
+    max-height: 355px;
+    max-width: 329px;
   }
 
   .info {
@@ -67,7 +70,7 @@
       display: flex;
       align-self: flex-start;
       justify-self: end;
-      
+
       p {
         margin: 0;
 
@@ -77,6 +80,35 @@
           &:hover {
             cursor: pointer;
             color: #1b9ae9;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .Card {
+    max-width: 415px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .Card {
+    .info {
+      min-height: 225px;
+      font-size: 13px;
+      padding-bottom: 0;
+
+      h2 {
+        font-size: 17px;
+      }
+
+      .quote {
+        p {
+          span {
+            font-size: 43px;
           }
         }
       }

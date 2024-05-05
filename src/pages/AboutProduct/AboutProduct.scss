@@ -37,7 +37,7 @@
     padding: 24px 215px 18px 215px;
 
     text-align: justify;
-    
+
     & > div {
       max-width: 1170px;
     }
@@ -68,10 +68,12 @@
         flex-direction: column;
 
         img {
-          width: 572px;
-          height: 298px;
-          padding: 24px 0 41px 31px;
-          float: right;
+          width: 100%;
+          height: auto;
+          max-width: 572px;
+
+          padding: 15px 0 15px 15px;
+          float: inline-end;
         }
       }
     }
@@ -95,9 +97,12 @@
         align-items: center;
 
         img {
-          width: 569px;
-          height: 344px;
-          padding-right: 30px;
+          width: 100%;
+          height: auto;
+          max-width: 569px;
+
+          padding: 15px 15px 15px 0;
+          float: inline-start;
         }
 
         .analysisEmulation {
@@ -141,7 +146,7 @@
 
             &:before {
               padding: 5px 15px 0 0;
-              content: '-';
+              content: "-";
             }
           }
         }
@@ -149,8 +154,84 @@
     }
 
     img {
-      width: 1169px;
-      height: 486px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .AboutProduct {
+    .productDescription {
+      padding: 15px 107px;
+    }
+
+    .testingTuning {
+      padding: 15px 107px;
+    }
+
+    .informationSecurity {
+      padding: 15px 107px;
+    }
+
+    .additionalFunctionality {
+      padding: 15px 107px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutProduct {
+    .productDescription {
+      padding: 15px;
+    }
+
+    .testingTuning {
+      padding: 15px;
+    }
+
+    .informationSecurity {
+      padding: 15px;
+    }
+
+    .additionalFunctionality {
+      padding: 15px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .AboutProduct {
+    font-size: 13px;
+    
+    span {
+      font-weight: 600;
+    }
+
+    .informationSecurity {
+      .informationSecurity-text {
+        gap: 10px;
+      }
+    }
+
+    .additionalFunctionality {
+      .additionalFunctionality-text {
+        gap: 10px;
+
+        .top{
+          gap: 10px;
+        }
+
+        .bottom {
+          gap: 10px;
+
+          ul {
+            li {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }

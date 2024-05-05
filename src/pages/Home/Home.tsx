@@ -2,6 +2,10 @@ import "./Home.scss";
 import pavuk_naklon from "../../assets/images/pavuk_naklon_belaya_obvodka1.png";
 import pavuk_pryamoy from "../../assets/images/pavuk_pryamoy_belaya_obvodka1.png";
 import { ReactComponent as Divider } from "../../assets/icons/divider-line.svg";
+import { NavLink } from "react-router-dom";
+
+// 1. переход в начало страницы при переходе
+// 2. адаптив для мобилки
 
 export const Home = () => {
   return (
@@ -11,7 +15,6 @@ export const Home = () => {
           <h1>Резон</h1>
           <h3>Резон - ваш незаменимый помощник в беспроводном мире!</h3>
           <h3>Это маленький девайс с большими возможностями!</h3>
-          <div className="learn-more">Узнать больше</div>
         </div>
       </div>
       <div className="discription">
@@ -21,7 +24,7 @@ export const Home = () => {
           связи в целях настройки, тестирования, отладки, разработки и аудита
           безопасности.
         </h4>
-        <Divider className="divider" />
+        <Divider className="divider" width='782px' height='12px'/>
       </div>
 
       <div className="advantages">
@@ -59,7 +62,7 @@ export const Home = () => {
       </div>
 
       <div className="whom">
-        <Divider className="divider-top" />
+        <Divider className="divider-top" width='782px' height='12px'/>
         <div className="c">
           <div className="whom-img">
             <img className="pavuk_naklon" src={pavuk_naklon} alt="Резон" />
@@ -94,12 +97,14 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <Divider className="divider-bottom" />
+        <Divider className="divider-bottom" width='782px' height='12px'/>
       </div>
 
       <div className="more">
         <h4>Заинтересовались? Читайте больше:</h4>
-        <div className="learn-more">Больше информации</div>
+        <NavLink className="nav-link" to="/information">
+          <div className="learn-more">Больше информации</div>
+        </NavLink>
       </div>
     </div>
   );

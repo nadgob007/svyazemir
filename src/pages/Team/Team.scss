@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 56px 215px 61px 215px;
+  padding: 56px 232px 61px 215px;
   font-size: 20px;
 
   .team-photo {
@@ -12,23 +12,21 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
-    max-width: 1170px;
+    // max-width: 1170px;
 
     gap: 30px;
 
     .title {
-      padding: 40px;
+      max-width: 370px;
+      // padding: 40px;
     }
 
-    .comand-photo {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 33px;
+    img {
+      width: 100%;
+      height: auto;
 
-      img {
-        max-width: 770px;
-        max-height: 497px;
-      }
+      max-width: 770px;
+      max-height: 497px;
     }
   }
 
@@ -64,6 +62,9 @@
 
     .programmers-image {
       img {
+        width: 100%;
+        height: auto;
+
         max-height: 510px;
         max-width: 682px;
       }
@@ -77,7 +78,7 @@
     justify-content: center;
 
     .divide-text {
-      width: 1170px;
+      max-width: 1170px;
       text-align: justify;
       padding: 88px 0 43px;
     }
@@ -85,6 +86,88 @@
     .cards-row {
       display: flex;
       gap: 76px;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .Team {
+    .programmers {
+      flex-direction: column-reverse;
+      height: auto;
+
+      .cards-column {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .Team {
+    padding: 15px 107px;
+
+    .team-photo {
+      flex-direction: column-reverse;
+
+      .title {
+        max-width: none;
+      }
+    }
+
+    .programmers {
+      .cards-column {
+        flex-direction: column;
+      }
+    }
+
+    .designSecurity {
+      .cards-row {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Team {
+    padding: 30px 15px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Team {
+    font-size: 13px;
+
+    .team-photo {
+      gap: 15px;
+    }
+
+    .quote-persons {
+      padding-top: 15px;
+
+      .divide-text {
+        padding: 30px 0 15px;
+      }
+    }
+
+    .programmers {
+      padding-top: 30px;
+      gap: 15px;
+
+      .cards-column {
+        gap: 30px;
+      }
+    }
+
+    .designSecurity {
+      .divide-text {
+        padding: 30px 0 15px;
+      }
+
+      .cards-row {
+        gap: 30px;
+      }
     }
   }
 }

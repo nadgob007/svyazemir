@@ -18,7 +18,7 @@ export const AboutProduct = () => {
         </div>
       </div>
       <div className="testingTuning">
-        <Divider className="divider-top" />
+        <Divider className="divider-top" width="782px" height="12px" />
         <div className="testingTuning-text">
           <h4>Тестирование и отладка</h4>
           <div className="text-img">
@@ -59,7 +59,7 @@ export const AboutProduct = () => {
             работоспособности системы в целом, по характеру передаваемых данных.
           </p>
         </div>
-        <Divider className="divider-bottom" />
+        <Divider className="divider-bottom" width="782px" height="12px" />
       </div>
       <div className="informationSecurity">
         <div className="informationSecurity-text">
@@ -70,18 +70,16 @@ export const AboutProduct = () => {
           </p>
 
           <div className="informationSecurity-img">
-            <div className="img">
-              <img src={red_backgroud} alt={"в работе"}></img>
-            </div>
             <div className="analysisEmulation">
               <p>
+                <img src={red_backgroud} alt={"в работе"}></img>
                 <span>Анализ трафика сети</span>
                 <br />В случае если какое-либо из устройств сети (например,
                 распределённой системы датчиков) будет передавать какой-либо
                 набор данных, не относящийся к его задокументированному
                 функционалу, это будет обнаружено.
-              </p>
-              <p>
+                <br />
+                <br />
                 <span>Эмуляция различных команд с пультов управления</span>
                 <br />
                 Например, может быть произведён аудит электронных замков, путём
@@ -96,6 +94,7 @@ export const AboutProduct = () => {
             <span>
               Сканирование эфира и поиск несанкционированных каналов связи{" "}
             </span>
+            <br />
             Разного рода прослушивающие устройства и прочие жучки, передают
             записывающий материал по радиоканалу. Во время передачи, может быть
             установлен наличие и характер жучка
@@ -105,6 +104,7 @@ export const AboutProduct = () => {
               Может быть осуществлён взлом Wi-Fi сети, для проверки её на
               защищённость
             </span>
+            <br />
             Устройство имеет функционал, позволяющий на время выводить из строя
             точки доступа Wi-Fi в радиусе 20 метров. Потенциально может быть
             осуществлён перехват радиосигналов с беспилотников, его модификацию
@@ -113,7 +113,7 @@ export const AboutProduct = () => {
         </div>
       </div>
       <div className="additionalFunctionality">
-        <Divider className="divider-top" />
+        <Divider className="divider-top" width="782px" height="12px" />
         <div className="additionalFunctionality-text">
           <div className="top">
             <h4>Дополнительный функционал</h4>

@@ -12,12 +12,12 @@ export const Footer = () => {
           <div className="text">
             <h2>Контакты</h2>
             <p>
-              <span>Телефон:</span> +7(927)207-22-41, Илья Владиславович
+              Телефон: +7(902)159-56-50, Артём Дмитриевич
             </p>
             <p>
-              Почта: <span className="email">ilgor2242@ya.ru</span>
+              Почта: <span className="email">svyazemir@mail.ru</span>
             </p>
-            <p>Вконтакте: https://vk.com/ilgor18</p>
+            <p>Вконтакте: https://vk.com/id405761296</p>
           </div>
         </div>
         <div className="about">
@@ -25,14 +25,14 @@ export const Footer = () => {
           <div className="">
             <h2>Навигация по сайту:</h2>
             <div className="navigation">
+              <NavLink className="nav-link" to="/">
+                Главная
+              </NavLink>
               <NavLink className="nav-link" to="/information">
                 Информация
               </NavLink>
               <NavLink className="nav-link" to="/team">
                 Команда
-              </NavLink>
-              <NavLink className="nav-link" to="/news">
-                Новости
               </NavLink>
             </div>
           </div>

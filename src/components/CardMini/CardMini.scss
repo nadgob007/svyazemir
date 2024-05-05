@@ -12,6 +12,7 @@
   .photo {
     display: flex;
     align-self: flex-end;
+
     max-height: 252px;
     max-width: 201px;
   }
@@ -43,15 +44,16 @@
       list-style-type: none;
 
       &.sofia {
-        flex-grow: 0; height: 120px;
+        flex-grow: 0;
+        height: 120px;
       }
-      
+
       li {
         margin: 8px 0;
 
         &::before {
           content: "•";
-          color: black; 
+          color: black;
           display: inline-block;
           width: 1em;
           margin-left: -1em;
@@ -80,8 +82,33 @@
         text-decoration: underline;
 
         &:hover {
-            cursor: pointer;
-            color: #1b9ae9;
+          cursor: pointer;
+          color: #1b9ae9;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .CardMini {
+    width: auto;
+    max-width: 250px;
+    height: auto;
+    gap: 0;
+    padding: 15px 15px 0 15px;
+    flex-direction: column-reverse;
+
+    .photo {
+      align-self: center;
+    }
+
+    .info {
+      font-size: 13px;
+
+      ul {
+        &.sofia {
+          height: auto;
         }
       }
     }
