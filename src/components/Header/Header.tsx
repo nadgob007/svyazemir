@@ -30,7 +30,7 @@ export const Header = () => {
           <p>+7(902)159-56-50</p>
         </div>
 
-        <div className="button">Заказать!</div>
+        <div className="button" onClick={()=>{window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}}>Заказать!</div>
 
         <nav role="navigation">
           <div className="menuToggle">
