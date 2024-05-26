@@ -1,8 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, NavigateFunction, useNavigate } from "react-router-dom";
 import "./Header.scss";
 import { ReactComponent as LogoNew } from "../../assets/icons/LogoNew.svg";
 
+function goToForm(navigte: NavigateFunction) {
+  navigte("/");
+  setTimeout(() => {
+    // document.querySelector(".contactUs")?.scrollIntoView({behavior: "smooth"})
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  }, 0);
+}
+
 export const Header = () => {
+  let navigte = useNavigate();
   return (
     <header>
       <div className="Header">
@@ -30,7 +39,14 @@ export const Header = () => {
           <p>+7(902)159-56-50</p>
         </div>
 
-        <div className="button" onClick={()=>{window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}}>Заказать!</div>
+        <div
+          className="button"
+          onClick={() => {
+            goToForm(navigte);
+          }}
+        >
+          Заказать!
+        </div>
 
         <nav role="navigation">
           <div className="menuToggle">

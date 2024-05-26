@@ -99,13 +99,12 @@ export const Home = () => {
       </div>
 
       <div className="more">
-          <h4>Заинтересовались? Читайте больше:</h4>
-          <NavLink className="nav-link" to="/information">
-            <div className="learn-more">Больше информации</div>
-          </NavLink>
+        <h4>Заинтересовались? Читайте больше:</h4>
+        <NavLink className="nav-link" to="/information">
+          <div className="learn-more">Больше информации</div>
+        </NavLink>
       </div>
       <ContactUs />
-      
     </div>
   );
 };
